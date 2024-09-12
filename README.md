@@ -1,8 +1,6 @@
 # Job Bookmarking App
 
-## Live Server:
-
-    - 
+## Live Server:  https://jobsbookmarkingapp.netlify.app/
 
 ## Overview
 
