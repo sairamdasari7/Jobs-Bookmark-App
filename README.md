@@ -28,7 +28,7 @@ The Job Bookmarking App is a React-based web application that allows users to br
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/job-bookmarking-app.git
+   git clone https://github.com/sairamdasari7/Jobs-Bookmark-App.git
 2. **Navigate to the project directory**:
 
     ```bash
