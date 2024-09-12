@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Job Bookmarking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Server:
 
-## Available Scripts
+    - 
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The Job Bookmarking App is a React-based web application that allows users to browse job listings, bookmark their favorite jobs, and view their bookmarked jobs. The app features a responsive design with professional styling for a clean user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Job Listings**: Fetch and display job listings from an external API.
+- **Bookmark Jobs**: Users can bookmark their favorite jobs.
+- **View Bookmarks**: View and manage bookmarked jobs.
+- **Responsive Design**: The app is responsive and adjusts to various screen sizes.
+- **Clear Bookmarks**: Option to clear all bookmarked jobs.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- Axios
+- CSS
+- Local Storage
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   git clone https://github.com/your-username/job-bookmarking-app.git
+2. **Navigate to the project directory**:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    cd job-bookmarking-app
 
-### `npm run eject`
+3. **Install the dependencies**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Start the development server**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm start
 
-## Learn More
+2. **Open your browser and go to** : http://localhost:3000.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Browse Job Listings**:
+    - View job details and click "Bookmark" to save jobs to your bookmarks.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Manage Bookmarks**:
 
-### Code Splitting
+    - Switch to the "Bookmarks" tab to view your saved jobs.
+    -Click "Clear Bookmarks" to remove all bookmarked jobs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## File Structure:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    - src/
+        - components/
+            - Jobs.js: Component for displaying job listings.
+            - Bookmark.js: Component for displaying bookmarked jobs.
+        - App.js: Main component handling tab switching and bookmark management.
+        - App.css: CSS file for styling the application.
+        - index.js: Entry point for the React application.
 
-### Making a Progressive Web App
+## CSS Styling:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    The CSS is designed to provide a professional and responsive layout. It includes:
+        
+        - Global Styles: Base styles for body and main content.
+        - Responsive Design: Adjustments for extra small, small, medium, and large devices.
+        - Button Styles: Professional colors for primary actions and special buttons.
 
-### Advanced Configuration
+## API:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    The app fetches job listings from the following API endpoint:
 
-### Deployment
+        - https://testapi.getlokalapp.com/common/jobs?page=<page>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License:
 
-### `npm run build` fails to minify
+    This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements:
+
+    - React Documentation
+    - Axios Documentation
+    - CSS Tricks for responsive design

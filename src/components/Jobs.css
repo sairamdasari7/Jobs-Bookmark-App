@@ -1,0 +1,182 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; 
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50; 
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  /* Jobs Container */
+  .jobs-container {
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Job Card */
+  .job-card {
+    background-color: #ffffff; 
+    border: 1px solid #dfe6e9; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .job-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .job-card h3 {
+    color: #34495e; 
+  }
+  
+  .job-card p {
+    color: #7f8c8d; 
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #16181a; 
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: scale(1.02);
+  }
+  
+  /* Load More Button */
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .load-more {
+    padding: 10px 20px;
+    background-color: #27ae60; 
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .load-more:hover {
+    background-color: #229954;
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Styling */
+  
+  /* Extra Small Devices (max-width: 576px) */
+  @media (max-width: 576px) {
+    .jobs-container {
+      background-color: #ffffff; 
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .job-card h3 {
+      font-size: 16px;
+    }
+  
+    .job-card p {
+      font-size: 14px;
+    }
+  
+    button, .load-more {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Small Devices (min-width: 577px and max-width: 768px) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    .jobs-container {
+      background-color: #f7f9fc; 
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .job-card h3 {
+      font-size: 18px;
+    }
+  
+    .job-card p {
+      font-size: 16px;
+    }
+  
+    button, .load-more {
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+  }
+  
+  /* Medium Devices (min-width: 769px and max-width: 992px) */
+  @media (min-width: 769px) and (max-width: 992px) {
+    .jobs-container {
+      background-color: #ffffff; 
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    .job-card h3 {
+      font-size: 20px;
+    }
+  
+    .job-card p {
+      font-size: 18px;
+    }
+  
+    button, .load-more {
+      font-size: 18px;
+      padding: 12px 18px;
+    }
+  }
+  
+  /* Large Devices (min-width: 993px) */
+  @media (min-width: 993px) {
+    .jobs-container {
+      background-color: #ffffff; 
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+    .job-card h3 {
+      font-size: 22px;
+    }
+  
+    .job-card p {
+      font-size: 20px;
+    }
+  
+    button, .load-more {
+      font-size: 20px;
+      padding: 14px 20px;
+    }
+  }
+  

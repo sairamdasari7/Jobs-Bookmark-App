@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1.heading {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Bookmark component styles */
+.bookmark-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.bookmark-card:hover {
+  transform: scale(1.02);
+}
+
+.bookmark-card h3 {
+  color: #2c3e50;
+}
+
+.bookmark-card p {
+  color: #7f8c8d;
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  /* Extra small devices (phones) */
+  .bookmark-card {
+    background-color: #e3f2fd;
+  }
+
+  h1.heading {
+    font-size: 24px;
+  }
+
+  .bookmark-card h3 {
+    font-size: 18px;
+  }
+
+  .bookmark-card p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* Small devices (tablets) */
+  .bookmark-card {
+    background-color: #ffebee; 
+  }
+
+  h1.heading {
+    font-size: 28px;
+  }
+
+  .bookmark-card h3 {
+    font-size: 20px;
+  }
+
+  .bookmark-card p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Medium devices (small laptops) */
+  .bookmark-card {
+    background-color: #e8f5e9; 
+    }
+
+  h1.heading {
+    font-size: 32px;
+  }
+
+  .bookmark-card h3 {
+    font-size: 22px;
+  }
+
+  .bookmark-card p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 993px) {
+  /* Large devices (large laptops and desktops) */
+  .bookmark-card {
+    background-color: #f3e5f5; 
+  }
+
+  h1.heading {
+    font-size: 36px;
+  }
+
+  .bookmark-card h3 {
+    font-size: 24px;
+  }
+
+  .bookmark-card p {
+    font-size: 20px;
+  }
+}

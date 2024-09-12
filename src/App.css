@@ -1,38 +1,117 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9; /* Light grey background for the whole page */
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.app-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff; 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #34495e; 
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav button {
+  background-color: #3498db; 
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.bottom-nav button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.clear-btn {
+  background-color: #e74c3c; 
+}
+
+.clear-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Styling */
+
+/* Extra Small Devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .app-content {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bottom-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-nav button {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 5px 0;
+  }
+}
+
+/* Small Devices (min-width: 577px and max-width: 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .app-content {
+    padding: 15px;
+  }
+
+  .bottom-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .bottom-nav button {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+}
+
+/* Medium Devices (min-width: 769px and max-width: 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .app-content {
+    padding: 20px;
+  }
+
+  .bottom-nav button {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+}
+
+/* Large Devices (min-width: 993px) */
+@media (min-width: 993px) {
+  .bottom-nav {
+    padding: 15px;
+  }
+
+  .bottom-nav button {
+    font-size: 20px;
+    padding: 14px 22px;
   }
 }
